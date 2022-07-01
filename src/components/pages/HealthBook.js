@@ -28,26 +28,7 @@ function HealthBook() {
   function addnewtest() {
     settoggle(!toggle);
   }
-  useEffect(() => {
-    axios.get(
-      'https://care360-net-dev.azurewebsites.net/api/UesrTest/GetLatestUserTestByMedicalTests?profileId=91e6f26e-07a1-4aed-94ab-cd1925c72061',
-      {headers: {
-              "Access-Control-Allow-Origin" : "*",
-              "Content-type": "Application/json",
-              "Authorization": `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiNGY5ODg3OTYtZTI4Ny00Zjc3LWE3MWQtMWQ4N2E3NGI1ZWY5IiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbW9iaWxlcGhvbmUiOiI4NzA3ODg3MjkwIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvY291bnRyeSI6Iis5MSIsImp0aSI6ImIxOGFiYzg1LWZhYWEtNDJjMy1hMjg0LTRlMzA4OGY2ZWU1MCIsImV4cCI6MTY1NzEyODQ4MiwiaXNzIjoiQWxhVGVjaCIsImF1ZCI6ImNhcmUzNjBDbGllbnQifQ.L-pgD2S8HiMh2T4Epjuy16Qdwp8d90X9eJjOUNOWJ9c`
-              }   
-      }
-    )
-    .then((res) => {
-        var response = res.data;
-        console.log(response.data);
-      },
-      (error) => {
-        var status = error.response.status
-        console.log(status);
-      }
-    );
-  }, []);
+ 
 
   return (
     <>
