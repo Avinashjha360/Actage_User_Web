@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap");
+img{
+    /* border: 1px solid red; */
+    width: 200px;
+    height: 88px;
+    padding: 10px;
+}
+header{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.13);
+}
+.search-bar{
+    
+    /* background-color: brown; */
+    position:relative;
+    padding: 45px 0px 10px 150px;
+}
+.search-bar input{
+    height: 40px;
+    width: 350px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.178);
+    padding-left: 10px;
+}
+.search-bar i{  
+    position: absolute;
+    bottom: 23px;
+    right: 15px;
+}

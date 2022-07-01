@@ -1,0 +1,58 @@
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding:10px 30px;
+    background-color: rgb(249, 255, 255);
+    /* border: 1px solid red; */
+}
+.box p span{
+    font-weight: 200;
+}
+.btn{
+    float: right;
+    color: yellowgreen;
+}
+
+.box button:first-child{
+    background-color: rgb(0, 204, 204);
+    border-radius: 30px;
+    padding: 4px 15px;
+}
+.table-box{
+    height: 80%;
+    width: 100%;
+    padding: 0px 20px;
+    background-color: white;
+    box-shadow:1px 1px 1px 3px #dfdfdf4b;
+    /* border: 1px solid green; */
+}
+
+.table-box select{
+    margin: 15px 5px;
+}
+.table-box td img{
+    height: 30px;
+    width: 40px;
+}
+.table-box th{
+    font-weight: 300;
+}
+.table-box td{
+    font-weight: 200;
+}
+.table-box thead th img{
+    height: 40px;
+    width: 40px;
+}
+.table-box tbody th img{
+    height: 45px;
+    width: 45px;
+    border-radius: 100px;
+}
+.bottom{
+ 
+    margin-top: 20px;
+    /* border: 1px solid red; */
+}
