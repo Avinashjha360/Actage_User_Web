@@ -1,40 +1,23 @@
-import React, { useState, useEffect, useRef } from 'react'
-import axios from 'axios';
-import { Table1data } from './data'
-import Addnewtest from './Addnewtest';
+import React, { useState} from 'react'
+import AddNewTest from './AddNewTest';
 import { Button } from '@mui/material';
 import './style/healthbook.css'
+import HealthBookTable from './HealthBookTable';
 
-const th = ["Table Name", "Date", "Time", "Reading", "Unit", "View"];
-function Tabledetail(props) {
-  return (
-    Table1data.map((item, index) => {
-      return (
-        <tr key={index}>
-          <th scope="row"><img src={item.image} alt="logo" />{item.tableName}</th>
-          <td>{item.Date}</td>
-          <td>{item.Time}</td>
-          <td>{item.Reading}</td>
-          <td>{item.Unit}</td>
-          <td><img src="images/Eye.png" alt="logo" /></td>
-        </tr>
-      )
-    })
-  )
-}
+const th = ["Test Name", "Date", "Time", "Reading", "Unit", "View"];
 
 function HealthBook() {
   const [toggle, settoggle] = useState(false);
-  function addnewtest() {
+  function addnewtestbutton() {
     settoggle(!toggle);
   }
- 
 
   return (
     <>
       <div className="box">
         <div>
-          <Button className='btn' variant="contained" onClick={addnewtest}>Add More</Button>
+          {!toggle && <Button className='btn' variant="contained" onClick={addnewtestbutton}>Add More</Button>}
+
           <h3>Health Book</h3>
           <p>Dashboard/ <span>Health Book</span></p>
         </div>
@@ -48,14 +31,14 @@ function HealthBook() {
             </select>entries
           </span>
 
-          <table className="table table-striped">
+          <table className="table">
             <thead>
               <tr>
                 {th.map((heading, index) => <th scope="col" key={index}>{heading}</th>)}
               </tr>
             </thead>
             <tbody>
-              <Tabledetail data={Table1data} />
+              <HealthBookTable />
             </tbody>
           </table>
           <div className="bottom">
@@ -67,11 +50,11 @@ function HealthBook() {
         </div>
     </div>
         <div className="add-test-box">
-          {toggle && <Addnewtest settoggle={settoggle}/>}
+          {toggle && <AddNewTest settoggle={settoggle}/>}
         </div>
 
       </>
       )
 }
 
-      export default HealthBook
+export default HealthBook

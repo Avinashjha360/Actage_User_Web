@@ -1,55 +1,46 @@
 const Table1data=[
     {
-      id:1,
       image:"images/Vector1.png",
-      tableName:"Weight",
-      Date:"06-06-22",
-      Time:"13:19",
-      Reading:64,
-      Unit:"KG",
-   
-  
+      category:"Weight",
+      testDate:"06-06-22",
+      testTime:"13:19",
+      testResult:64,
+      measurementUnit:"KG",
     },
     {
-      id:2,
       image:"images/Vector2.png",
-      tableName:"Covid19",
-      Date:"06-06-22",
-      Time:"13:19",
-      Reading:"-",
-      Unit:"-",
-   
+      category:"Covid19",
+      testDate:"06-06-22",
+      testTime:"13:19",
+      testResult:"90",
+      measurementUnit:"cel",
     },
     {
-      id:3,
       image:"images/Vector3.png",
-      tableName:"Temperature",
-      Date:"06-06-22",
-      Time:"13:19",
-      Reading:100.4,
-      Unit:"F",
+      category:"Temperature",
+      testDate:"06-06-22",
+      testTime:"13:19",
+      testResult:100.4,
+      measurementUnit:"F",
      
     },
     {
-      id:4,
       image:"images/Vector4.png",
-      tableName:"Pulse",
-      Date:"06-06-22",
-      Time:"13:19",
-      Reading:80,
-      Unit:"BPM",
+      category:"Pulse",
+      testDate:"06-06-22",
+      testTime:"13:19",
+      testResult:80,
+      measurementUnit:"BPM",
     
     },
     {
-      id:5,
       image:"images/Vector4.png",
-      tableName:"Blood Pressure",
-      Date:"06-06-22",  
-      Time:"13:19",
-      Reading:110,
-      Unit:"mmHg",
-    },
-   
+      category:"Blood Pressure",
+      testDate:"06-06-22",  
+      testTime:"13:19",
+      testResult:110,
+      measurementUnit:"mmHg",
+    },   
   ]
   const Table2data=[
     {

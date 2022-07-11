@@ -1,18 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap");
-img{
-    /* border: 1px solid red; */
-    width: 200px;
-    height: 88px;
-    padding: 10px;
-}
+
 header{
     background-color: rgb(255, 255, 255);
     display: flex;
     border-bottom: 1px solid rgba(0, 0, 0, 0.13);
 }
+header img{
+    width: 220px;
+    height: 90px;
+    padding: 0px 0px 0px 30px;
+}
 .search-bar{
-    
-    /* background-color: brown; */
     position:relative;
     padding: 45px 0px 10px 150px;
 }
@@ -22,6 +20,8 @@ header{
     border-radius: 5px;
     border: 1px solid rgba(0, 0, 0, 0.178);
     padding-left: 10px;
+    /* font-family: ; */
+  
 }
 .search-bar i{  
     position: absolute;
