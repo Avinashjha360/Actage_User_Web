@@ -1,6 +1,7 @@
 .box{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 100%;
     padding:20px 30px;
     background-color: #F8FAF9;
@@ -8,46 +9,6 @@
 .box p span{
     font-weight: 150;
     color: #757575;
-}
-.btn{
-    float: right;
-}
-
-.box button:first-child{
-    background-color: rgb(0, 204, 204);
-    border-radius: 30px;
-    padding: 4px 20px;
-}
-.table-box{
-    width: 100%;
-    padding: 20px 20px;
-    margin-top: 10px;
-    background-color: white;
-    color: #757575;
-    box-shadow:1px 1px 1px 3px #dfdfdf4b;
-}
-.table-box select{
-    margin: 0px 5px 10px;
-}
-
-.table-box thead{
-    background-color:#F8F9FA;
-}
-.table-box thead th{
-    font-weight: 400;
-}
-.table-box tbody th{
-    font-weight: 300;
-}
-.table-box tbody td{
-    font-weight: 200;
-}
-.table-box tbody tr:hover{
-   background: #F8FAF9;
-}
-
-.bottom{
-    margin-top: 20px;
 }
 
 .no-page{

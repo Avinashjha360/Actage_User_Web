@@ -1,9 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap");
-
 header{
     background-color: rgb(255, 255, 255);
     display: flex;
     border-bottom: 1px solid rgba(0, 0, 0, 0.13);
+}
+
+header div:first-child{
+    width: 20%;
+}
+header div{
+    width: 40%;
+}
+
+header div:last-child{
+  padding: 30px 10px 0px 0px;
 }
 header img{
     width: 220px;
@@ -12,11 +21,11 @@ header img{
 }
 .search-bar{
     position:relative;
-    padding: 45px 0px 10px 150px;
+    padding: 45px 0px 10px 100px;
 }
 .search-bar input{
     height: 40px;
-    width: 350px;
+    width: 80%;
     border-radius: 5px;
     border: 1px solid rgba(0, 0, 0, 0.178);
     padding-left: 10px;
@@ -26,5 +35,26 @@ header img{
 .search-bar i{  
     position: absolute;
     bottom: 23px;
-    right: 15px;
+    right: 115px;
+    color: gray;
+}
+.logout-btn{
+    float: right;
+}
+@media(max-width:600px) {
+    header img{
+        width: 160px;
+        height: 70px;
+        padding: 0px;
+    }
+    .search-bar{
+       display: none;
+    }
+    header div{
+        width: 80%;
+    }
+    header div:last-child{
+        padding: 18px 10px 0px 0px;
+      }
+    
 }
